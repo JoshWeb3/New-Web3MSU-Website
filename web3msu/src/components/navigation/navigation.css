@@ -1,0 +1,83 @@
+.navigationItems {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.navigationBar {
+  background-color: #320057;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+}
+
+.navigationButton {
+  max-width: 50px;
+  max-height: auto;
+  cursor: pointer;
+}
+
+.grey {
+  color: grey;
+}
+
+.white {
+  color: white;
+}
+
+.noDeco {
+  text-decoration: none;
+}
+
+.linkMenu {
+  background-color: #320057;
+  height: 200px;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  margin-top: 50px;
+  padding: 30px;
+  animation: fadeInDown 1s;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.linkItems {
+  color: white;
+  float: right;
+  margin-right: 12%;
+  font-size: 30px;
+  text-align: center;
+  animation: fadeInDown 0.1s;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  z-index: 2;
+}
+
+@media only screen and (min-width: 1900px) {
+  .linkItems {
+    margin-right: 10%;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+  }
+}

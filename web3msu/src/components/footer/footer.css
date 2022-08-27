@@ -1,0 +1,26 @@
+.footer {
+  background: #320057;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.footerIcon {
+  max-width: 30px;
+  max-height: 30px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.footerInline {
+  display: inline-block;
+}
+
+.noDeco {
+  text-decoration: none;
+}
+
+.alignLink {
+  display: flex;
+  justify-content: center;
+}

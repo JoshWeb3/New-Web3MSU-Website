@@ -1,0 +1,86 @@
+.background {
+  background-image: url("../../../assets/bitcoinWallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  clip-path: polygon(50% 100%, 100% 75%, 100% 0, 0 0, 0 75%);
+}
+
+.backgroundTitle {
+  color: white;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  animation: fadeIn 3s;
+}
+
+.joinUs {
+  color: white;
+  text-align: center;
+  background-color: blueviolet;
+  border-radius: 100px 100px 100px 100px;
+  max-width: 30%;
+  margin: 0 auto;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.joinUs:hover {
+  transition: 0.2s;
+  background-color: rgb(171, 98, 240);
+}
+
+.moveLeft {
+  font-size: 25px;
+}
+
+.moveRight {
+  font-size: 20px;
+}
+
+.noDeco {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1900px) {
+  .background {
+    height: 1000px;
+  }
+
+  .backgroundTitle {
+    text-align: start;
+  }
+
+  .moveRight {
+    margin-left: 70%;
+    font-size: 36px;
+  }
+
+  .moveLeft {
+    font-size: 36px;
+  }
+
+  .joinUs {
+    margin-top: 100px;
+    max-width: 20%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+  }
+}
