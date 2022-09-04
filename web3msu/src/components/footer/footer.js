@@ -22,7 +22,7 @@ export const Footer = () => {
           <div className="footerInline">Web3MSU@Gmail.com</div>
         </div>
         <div className="footerInline">
-          <a className="noDeco" href="https://discord.gg/6SGCxcaA">
+          <a className="noDeco" href="https://discord.gg/dGmdNPmEBR">
             <img class="footerIcon" src={discord} />
           </a>
           <a className="noDeco" href="https://twitter.com/Web3MSU">
