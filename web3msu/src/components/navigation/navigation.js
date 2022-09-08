@@ -1,38 +1,51 @@
 import "./navigation.css";
 
 import { React, useEffect, useState } from "react";
-
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  BrowserRouter,
+} from "react-router-dom";
 import hamburger from "../../assets/hamburger.png";
 import logo from "../../assets/msulogo.png";
 
-const LinkMenu = () => {
-  return (
-    <div className="linkMenu">
-      <div className="linkItems">
-        {" "}
-        <a href="/" className="noDeco white">
-          <div>Home</div>
-        </a>
-        <br />
-        <div className="grey">About us</div>
-        <br />
-        <div className="grey">Resources</div>
-        <br />
-      </div>
-    </div>
-  );
-};
+
 
 export const Navigation = () => {
   const [showNav, setNav] = useState(false);
-
-  function toggleNav() {
+  
+    function toggleNav() {
     if (showNav == false) {
       setNav(true);
     } else {
       setNav(false);
     }
   }
+  
+  const LinkMenu = () => {
+  
+  return (
+    <div className="linkMenu">
+      <div className="linkItems">
+        {" "}
+        <Link onClick={toggleNav} to="/" className="noDeco white">
+          <div>Home</div>
+        </Link>
+        <br/>
+        <div className="grey">About us</div>
+       <br/>
+       <Link onClick={toggleNav} to="/web3msuapp" className="noDeco white">
+        <div>Login</div>
+        </Link>
+        <br />
+      </div>
+    </div>
+  );
+};
+
+
 
   if (showNav == false) {
     return (

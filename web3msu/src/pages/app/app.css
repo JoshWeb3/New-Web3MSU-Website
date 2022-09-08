@@ -1,0 +1,35 @@
+.web3app {
+
+    box-shadow: 5px 5px 5px black;
+    height:500px;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    
+    background: white;
+
+}
+
+.title {
+    color:black;
+    text-align: center;
+    padding-top:50px;
+}
+
+.middle {
+    height:300px;
+}
+
+.center{
+    display: flex;
+justify-content: center;
+}
+
+.connectWeb3{
+    text-align: center;
+    background-color:purple;
+    color:white;
+    padding:15px;
+    width:200px;
+    align-items: center;
+}
